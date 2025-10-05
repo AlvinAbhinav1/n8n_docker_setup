@@ -16,7 +16,7 @@ jobs:
 
     - name: Copy files to Droplet
       run: |
-        rsync -avz -e "sshpass -p '${{ secrets.DROPLET_PASSWORD }}' ssh -o StrictHostKeyChecking=no" ./n8n/ vyrana@68.183.85.180:/home/vyrana/n8n.vyrana.com/
+        rsync -avz -e "sshpass -p '${{ secrets.DROPLET_PASSWORD }}' ssh -o StrictHostKeyChecking=no" ./ vyrana@68.183.85.180:/home/vyrana/n8n.vyrana.com/
 
     - name: Deploy with Docker Compose
       run: |
