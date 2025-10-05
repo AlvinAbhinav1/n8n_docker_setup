@@ -34,6 +34,6 @@ jobs:
 # ---
 # Setup instructions:
 # 1. Add the following repository secret in GitHub:
-#    - DROPLET_PASSWORD:The SSH password for vyrana@68.183.85.180
+#   - DROPLET_PASSWORD:The SSH password for vyrana@68.183.85.180
 # 2. This workflow will rsync your n8n folder and run docker compose up on the droplet.
 # 3. For production, secure your droplet, use strong credentials, and set up monitoring/backups.
