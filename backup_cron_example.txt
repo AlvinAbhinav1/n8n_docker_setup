@@ -1,0 +1,2 @@
+# Cron job to backup Postgres every night at 2:00 AM
+0 2 * * * /bin/bash /home/$(whoami)/n8n/backup_postgres.sh >> /home/$(whoami)/n8n/backup_cron.log 2>&1
