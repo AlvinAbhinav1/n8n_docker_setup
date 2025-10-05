@@ -21,7 +21,7 @@ jobs:
     - name: Deploy with Docker Compose
       run: |
         sshpass -p '${{ secrets.DROPLET_PASSWORD }}' ssh -o StrictHostKeyChecking=no vyrana@68.183.85.180 '
-          cd /home/vyrana/n8n && \
+          cd /home/vyrana/n8n.vyrana.com && \
           docker compose pull && \
           docker compose up -d --remove-orphans
         '
